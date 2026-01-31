@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { initializeCoco, getEncodedToken } from 'coco-cashu-core';
+import { initializeCoco, getEncodedToken, getDecodedToken } from 'coco-cashu-core';
 import { SqliteRepositories } from 'coco-cashu-sqlite3';
 import sqlite3 from 'sqlite3';
 import { randomBytes } from 'crypto';
@@ -317,6 +317,29 @@ async function main() {
           process.exit(1);
         }
         try {
+          // Auto-add mint if unknown
+          const tokenStr = args[0];
+          const decoded = getDecodedToken(tokenStr);
+          
+          let tokenMintUrl;
+          if (decoded.mint) {
+             tokenMintUrl = decoded.mint;
+          } else if (decoded.token && decoded.token.length > 0) {
+             tokenMintUrl = decoded.token[0].mint;
+          }
+            
+          if (tokenMintUrl) {
+              const currentMints = await coco.mint.getAllMints();
+              const existingMint = currentMints.find(m => m.mintUrl === tokenMintUrl);
+              
+              if (!existingMint || !existingMint.trusted) {
+                console.log(`🆕 Found new or untrusted mint in token: ${tokenMintUrl}`);
+                console.log('🔄 trusting mint automatically...');
+                await coco.mint.addMint(tokenMintUrl, { trusted: true });
+                console.log(`✅ Trusted mint: ${tokenMintUrl}`);
+              }
+            }
+
           await coco.wallet.receive(args[0]);
           console.log(`✅ Token received successfully`);
         } catch (error) {
